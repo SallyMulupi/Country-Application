@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
- import Countries from './components/CountryItems/Countries'
- import CountriesContainer from './components/CountryItems/CountriesContainer'
+
+ 
 import NavBar from './components/navigation/NavBar'
-import Country from './components/CountryItems/Country'
+import Country from './components/pages/Country'
 import Header from './components/navigation/Header'
-import SearchBox from './components/Navigation/search';
+import './index.css'
 import Filter from './components/navigation/Filter';
 function App() {
   
@@ -18,9 +18,9 @@ function App() {
     </Route>
     <Route exact path="/countries/:name" children={<Countries />}></Route>
     <Route exact path="/country/:name" children={<Country />}></Route>
-    <Route exact path="/SeearchBox/:name" children={<SearchBox />}></Route>
+    
     <Route exact path="/Filter/:name" children={<Filter />}></Route>
-    <Route exact path="/countriescontainer/:name" children={<CountriesContainer />}></Route>
+    
     <Route exact path="/Navbar/:name" children={<NavBar />}></Route>
   </>
   </Router>
