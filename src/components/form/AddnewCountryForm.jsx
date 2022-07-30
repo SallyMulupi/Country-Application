@@ -16,5 +16,11 @@ function AddNewCountryForm(props) {
          const enteredCapital = capitalInputRef.current.value;
          const enteredcurrency = currencyInputRef.current.value;
          const enteredLanguage = languageInputRef.current.value;
-
+         const countryDetails={
+            Continent:enteredContinent,
+            Country:enteredCapital,
+            Capital:enteredCapital,
+        Currency:enteredCurrency,
+            Language:enteredLanguage,
+        };
 export default AddNewcountryForm;
