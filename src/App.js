@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
  import Countries from './components/CountryItems/Countries'
  import CountriesContainer from './components/CountryItems/CountriesContainer'
-
+import NavBar from './components/navigation/NavBar'
 import Country from './components/CountryItems/Country'
 import Header from './components/Header'
 import SearchBox from './components/Navigation/search';
@@ -21,6 +21,7 @@ function App() {
     <Route exact path="/SeearchBox/:name" children={<SearchBox />}></Route>
     <Route exact path="/Filter/:name" children={<Filter />}></Route>
     <Route exact path="/countriescontainer/:name" children={<CountriesContainer />}></Route>
+    <Route exact path="/Navbar/:name" children={<NavBar />}></Route>
   </>
   </Router>
 )
