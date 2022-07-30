@@ -1,5 +1,5 @@
 import "./app.css";
-import { Routes, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import AllCountries from "./components/AllCountries/AllCountries";
 import CountryInfo from "./components/CountryInfo/CountryInfo";
 
