@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
  import CountriesContainer from './components/CountryItems/CountriesContainer'
 import NavBar from './components/navigation/NavBar'
 import Country from './components/CountryItems/Country'
-import Header from './components/Header'
+import Header from './components/navigation/Header'
 import SearchBox from './components/Navigation/search';
-import Filter from './components/Filter';
+import Filter from './components/navigation/Filter';
 function App() {
   
   return (
