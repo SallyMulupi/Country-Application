@@ -1,30 +1,24 @@
-import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import "./app.css";
+import { Routes, Route } from "react-router-dom";
+import AllCountries from "./components/AllCountries/AllCountries";
+import CountryInfo from "./components/CountryInfo/CountryInfo";
 
- 
-import NavBar from './components/navigation/NavBar'
-import Country from './components/pages/Country'
-import Header from './components/navigation/Header'
-import './index.css'
-import Filter from './components/navigation/Filter';
 function App() {
-  
   return (
-       <Router>
-   <>
-     <Header />
-   <Route exact path="/">
-      <Countries />
-    </Route>
-    <Route exact path="/countries/:name" children={<Countries />}></Route>
-    <Route exact path="/country/:name" children={<Country />}></Route>
-    
-    <Route exact path="/Filter/:name" children={<Filter />}></Route>
-    
-    <Route exact path="/Navbar/:name" children={<NavBar />}></Route>
-  </>
-  </Router>
-)
-  
- }
-export default App
+    <>
+      <div className="header">
+        <div className="container">
+          <h5>Where in the world</h5>
+        </div>
+      </div>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<AllCountries />} />
+          <Route path="/country/:countryName" element={<CountryInfo />} />
+        </Routes>
+      </div>
+    </>
+  );
+}
+
+export default App;
