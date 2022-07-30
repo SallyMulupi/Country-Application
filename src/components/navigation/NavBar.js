@@ -3,5 +3,8 @@ import './nav.css'
 import { Link } from 'react-router-dom'
 
 function NavBar() {
-    return
+    return ( 
+        <header className='header>'
+       
+    )
 }
