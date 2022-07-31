@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { apiURL } from "../util/api";
-
-import SearchInput from "../Search/SearchInput";
-import FilterCountry from "../FilterCountry/FilterCountry";
-
+import { apiURL } from "./util/api"
+import SearchInput from "./Search/SearchInput";
+import FilterCountry from "./FilterCountry/FilterCountry"
 import { Link } from "react-router-dom";
 
 const AllCountries = () => {

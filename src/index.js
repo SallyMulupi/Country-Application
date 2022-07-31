@@ -7,7 +7,7 @@ import {
     Routes,
     Route,
 } from 'react-router-dom'
-import AllCountries from "./components/pages/AllCountries";
+import AllCountries from "./components/AllCountries";
 import CountryInfo from "./components/pages/CountryInfo";
 
 

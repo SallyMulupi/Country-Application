@@ -1,9 +1,14 @@
-import React from "react";
-import { BrowserRouter, Route, Routes} from "react-router-dom";
-import AllCountries from "./components/pages/AllCountries";
-import CountryInfo from "./pages/CountryInfo";
+import React from 'react';
+import './index.css';
+import {
+    BrowserRouter,                                                                                                              
+    Routes,
+    Route,
+} from 'react-router-dom'
+import AllCountries from './pages/AllCountries.js'
+import CountryInfo from "./components/pages/CountryInfo";
 
-import "./app.css";
+
 
 function App() {
   return (
