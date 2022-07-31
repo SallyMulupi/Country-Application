@@ -1,16 +1,16 @@
 import React from 'react';
-import './index.css';
+import '../index.css'
 import {
-    BrowserRouter,                                                                                                              
+                                                                                                                  
     Routes,
     Route,
 } from 'react-router-dom'
 import AllCountries from './pages/AllCountries.js'
-import CountryInfo from "./components/pages/CountryInfo";
+import CountryInfo from './pages/CountryInfo';
 
 
 
-function App() {
+ function App() {
   return (
     <>
       <div className="header">
@@ -19,12 +19,12 @@ function App() {
         </div>
       </div>
       <div className="container">
-        <BrowserRouter>
+        
         <Routes>
           <Route path="/" element={<AllCountries />} />
           <Route path="/country/:countryName" element={<CountryInfo />} />
         </Routes>
-        </BrowserRouter>
+      
       </div>
     </>
   );
