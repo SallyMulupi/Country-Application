@@ -8,7 +8,7 @@ import {
     Route,
 } from 'react-router-dom'
 import AllCountries from "./components/pages/AllCountries";
-import CountryInfo from "./components/CountryInfo/CountryInfo";
+import CountryInfo from "./components/items/CountryInfo";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
