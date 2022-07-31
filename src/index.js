@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import {
     BrowserRouter,                                                                                                              
     Routes,
     Route,
 } from 'react-router-dom'
 import AllCountries from "./components/pages/AllCountries";
-import CountryInfo from "./components/items/CountryInfo";
+import CountryInfo from "./components/pages/CountryInfo";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
